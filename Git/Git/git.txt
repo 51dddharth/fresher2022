@@ -3,10 +3,6 @@ $ git config --global user.name
 51dddharth
 
 siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git (master)
-$ git config --global user.email
-siddharth156sid@gmail.com
-
-siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git (master)
 $ mkdir project_dir
 
 siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git (master)
