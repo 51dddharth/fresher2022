@@ -1,0 +1,764 @@
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git (master)
+$ git config --global user.name
+51dddharth
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git (master)
+$ git config --global user.email
+siddharth156sid@gmail.com
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git (master)
+$ mkdir project_dir
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git (master)
+$ cd project_dir
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git init
+Initialized empty Git repository in S:/Training Materials/Works/Git/project_dir/.git/
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ touch index.html
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git add -A
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git commit -m "committing index.html file"
+[master (root-commit) 2423f3d] committing index.html file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ touch info.txt
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ touch .gitignore
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git add -A
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git commit -a -m "ignored some files and added git ignore"
+[master c181140] ignored some files and added git ignore
+ 2 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git add -A
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git commit -m "committed"
+[master 53c2515] committed
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git log
+commit 53c25158a43777d5a213c324ff083ec074ffe913 (HEAD -> master)
+Author: 51dddharth <siddharth156sid@gmail.com>
+Date:   Sun Feb 13 13:05:59 2022 +0530
+
+    committed
+
+commit c1811400f0501607757e1475b3ed8aecd3008b79
+Author: 51dddharth <siddharth156sid@gmail.com>
+Date:   Sun Feb 13 13:00:15 2022 +0530
+
+    ignored some files and added git ignore
+
+commit 2423f3d2683c058e9fee4f7a054596cabb67d3fa
+Author: 51dddharth <siddharth156sid@gmail.com>
+Date:   Sun Feb 13 12:36:55 2022 +0530
+
+    committing index.html file
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git restore index.html
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ mkdir assignments
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir (master)
+$ cd assignments
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git init
+Initialized empty Git repository in S:/Training Materials/Works/Git/project_dir/assignments/.git/
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ touch README.txt
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git add -A
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git commit -m "committing README.txt file"
+[master (root-commit) a858c78] committing README.txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch html-assignments
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ touch a1.html
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ touch a2.html
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git status
+On branch html-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a1.html
+        a2.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git add -A
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git commit -m "added and committing a1 and a2"
+[html-assignments b3913d0] added and committing a1 and a2
+ 2 files changed, 2 insertions(+)
+ create mode 100644 a1.html
+ create mode 100644 a2.html
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a1.html
+        modified:   a2.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git add .
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git commit -m "commiting changes"
+[html-assignments c76689a] commiting changes
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git add .
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git commit -m "commiting changes in README.txt"
+[master 7012ccf] commiting changes in README.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   a1.html
+        modified:   a2.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git add .
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git commit -m "a1a2 changes committed"
+[html-assignments d2d0a51] a1a2 changes committed
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git merge html-assignments
+Merge made by the 'ort' strategy.
+ a1.html | 1 +
+ a2.html | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 a1.html
+ create mode 100644 a2.html
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git checkout
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch
+  html-assignments
+* master
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch -d html-assignments
+Deleted branch html-assignments (was d2d0a51).
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch
+* master
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git config --global user.name
+51dddharth
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git config --global user.email
+siddharth156sid@gmail.com
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch css-assignments
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git status
+On branch css-assignments
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ touch b1.css
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ touch b2.css
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git add .
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git commit -m "committing css files"
+[css-assignments 6ec5aa9] committing css files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 b1.css
+ create mode 100644 b2.css
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git status
+On branch css-assignments
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git status
+On branch css-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git add .
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git commit -m "committing README.txt"
+[css-assignments b93db5e] committing README.txt
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git status
+On branch css-assignments
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git add -A
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git commit -m "committing changes in README.txt"
+[master 74aca89] committing changes in README.txt
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git status
+On branch css-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   b1.css
+        modified:   b2.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git add -A
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git commit -m "committing in b1b2"
+[css-assignments 093ae9b] committing in b1b2
+ 2 files changed, 2 insertions(+)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git status
+On branch css-assignments
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git merge css-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   b1.css
+        new file:   b2.css
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.txt
+
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master|MERGING)
+$ git add .
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master|MERGING)
+$ git commit -m "committing changes"
+[master 46ff949] committing changes
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git merge css-assignments
+Already up to date.
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch
+  css-assignments
+* master
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch -d css-assignments
+Deleted branch css-assignments (was 093ae9b).
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch
+* master
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch js-assignments
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch
+  js-assignments
+* master
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ touch c1.js
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ touch c2.js
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git status
+On branch js-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        c1.js
+        c2.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git status
+On branch js-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        c1.js
+        c2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git add -A
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git commit -m "committing js file and changes in README.txt"
+[js-assignments 0060a46] committing js file and changes in README.txt
+ 3 files changed, 2 insertions(+), 5 deletions(-)
+ create mode 100644 c1.js
+ create mode 100644 c2.js
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git status
+On branch js-assignments
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git add .
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git commit -m "commiting changes in README.txt in master"
+[master 8f67a8a] commiting changes in README.txt in master
+ 1 file changed, 1 insertion(+)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch
+  js-assignments
+* master
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git status
+On branch js-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+        modified:   c1.js
+        modified:   c2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git add .
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git commit -m "commiting changes in js files"
+[js-assignments b54429e] commiting changes in js files
+ 3 files changed, 3 insertions(+), 1 deletion(-)
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git status
+On branch js-assignments
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git merge js-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   c1.js
+        new file:   c2.js
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.txt
+
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master|MERGING)
+$ git add -A
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master|MERGING)
+$ git commit -m "final commit"
+[master bc2189f] final commit
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch
+  js-assignments
+* master
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch -d js-assignments
+Deleted branch js-assignments (was b54429e).
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git branch
+* master
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git remote add origin https://github.com/51dddharth/fresher2022.git
+
+siddh@SIDDHARTH MINGW64 /s/Training Materials/Works/Git/project_dir/assignments (master)
+$ git push -u origin master
+To https://github.com/51dddharth/fresher2022.git
+
